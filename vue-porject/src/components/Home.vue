@@ -43,7 +43,6 @@ export default {
   data() {
     return {
       classify: this.$store.state.classifyIdx,
-      titleIdx: "新品",
       navlist: [
         {
           title: "首页",
@@ -90,7 +89,6 @@ export default {
     },
     goto(a, b) {
       this.$store.commit('chanfeClassifyIdx',a);
-      // this.$router.push({name:'homeclass',params:'a'})
     }
   }
 };
@@ -98,9 +96,6 @@ export default {
 <style lang="scss" scoped>
 .search {
   height: 38px;
-  //   .tabnav{
-  //       border-top: 1px solid #ccc;
-  //   }
   .img {
     height: 32px;
     text-align: center;
