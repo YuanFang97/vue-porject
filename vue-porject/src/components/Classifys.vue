@@ -1,11 +1,11 @@
 <template>
-    <div>
-        主题
-    </div>
+  <div>
+    {{classify}}
+  </div>
 </template>
 
 <script>
 export default {
-    
-}
+  props: ["classify"]
+};
 </script>

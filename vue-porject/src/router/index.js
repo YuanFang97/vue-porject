@@ -7,6 +7,7 @@ import Cart from '../components/Cart.vue'
 import Classify from '../components/Classify.vue'
 import Special from '../components/Special.vue'
 import My from '../components/My.vue'
+import HomeClass from '../components/Classifys.vue'
 // 安装（使用）路由
 Vue.use(VueRouter);
 // 实例化router并配置参数
@@ -37,6 +38,11 @@ let router = new VueRouter({
             name: 'my',
             path: '/my',
             component: My
+        },
+        {
+            name: 'homeclass',
+            path: '/homeclass/:id',
+            component: HomeClass
         },
         {
             // 当浏览器路径为/时，重定向到/home
